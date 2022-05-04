@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<style>
+    body{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    #navbar{
+        min-width: 100%;
+        width: auto;
+        position: fixed;
+        order: 1;
+        z-index: 2;
+    }
+    #navbar-ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+    #navbar-li{
+        float: right;
+    }
+    #navbar-a{
+        display: block;
+        color: #CCFF00;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 25px;
+        font-family: courier;
+    }
+    #welcome-section{
+        height: 100vh;
+    }
+    #name{
+        font-family: courier;
+        font-size: 100px;
+        margin-top: 20px;
+    }
+    main{
+        order: 2;
+        position: absolute;
+        top: 300px;
+        z-index: 1;
+    }
+    @media(max-width: 900px){
+        #navbar-ul{
+            background-color: green;
+        }
+    }
+</style>
+<html>
+    <body>
+        <nav id="navbar">
+            <ul id="navbar-ul">
+                <li id="navbar-li"><a id="navbar-a" href="#welcome-section">About</a></li>
+                <li id="navbar-li"><a id="navbar-a" href="#projects">Work</a></li>
+                <li id="navbar-li"><a id="navbar-a" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="welcome-section">
+                <h1 id="name">Lim Fuo En</h1>
+            </section>
+            <section id="projects">
+                <div class="project-tile">Project #1</div>
+                <a href="https://www.youtube.com/" target="_blank">Here</a>
+            </section>
+            <section id="contact">
+                <a id="profile-link" href="https://github.com/Fe-56" target="_blank">Github</a>
+            </section>
+        </main>
+    </body>
+</html>
